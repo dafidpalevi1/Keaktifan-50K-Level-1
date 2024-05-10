@@ -8,11 +8,10 @@ function calculate() {
     return;
   }
 
-  var hasil = totalBerlian * hargaBerlian; // Menghitung hasil berdasarkan jumlah berlian dan harga per berlian
+  var hasil = 0; // Set nilai awal hasil
 
-  if (hasil < 0) {
-    alert("Total berlian tidak valid, hasil penjumlahan tidak dapat dihitung.");
-    return;
+  if (totalBerlian >= 50000) { // Jika total berlian lebih dari atau sama dengan 50.000, maka hitung perkaliannya
+    hasil = totalBerlian * hargaBerlian; // Menghitung hasil berdasarkan jumlah berlian dan harga per berlian
   }
 
   var table = document.getElementById('result');
